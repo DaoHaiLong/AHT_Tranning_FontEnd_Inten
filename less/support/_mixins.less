@@ -1,0 +1,34 @@
+
+.col (@value){
+    width: @value;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.d-flex (){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.transform (@translate){
+    transform: @translate;
+    -moz-transform: @translate;
+    -webkit-transform: @translate;
+    -o-transform: @translate;
+    -ms-transform: @translate;
+}
+.appearance(){
+    -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance:none;
+}
+.transition(@propety,@value){
+   transition: @arguments;
+   -moz-transition: @arguments;
+   -webkit-transition: @arguments;
+   -o-transition: @arguments;
+}
+.equalize(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
