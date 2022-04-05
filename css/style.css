@@ -202,6 +202,7 @@ body {
   color: #0ca8c9;
   font-size: 27px;
   margin-left: 21px;
+  cursor: pointer;
 }
 .header-bottom-inner .bottom-form-control .control-item:hover {
   transform: rotate(360deg);
@@ -213,6 +214,7 @@ body {
 .header-bottom-inner .bottom-form-control .cart {
   position: relative;
   padding-right: 9px;
+  cursor: pointer;
 }
 .header-bottom-inner .bottom-form-control .cart::after {
   content: attr(data);
@@ -477,6 +479,7 @@ body {
   box-sizing: border-box;
   padding: 0 15px;
   position: relative;
+  cursor: pointer;
 }
 .banner-left .banner-inner {
   overflow: hidden;
@@ -535,6 +538,7 @@ body {
   width: 41.6667%;
   padding: 0 15px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .banner-right-item {
   position: relative;
@@ -582,21 +586,21 @@ body {
 .banner-right .content-bottom {
   margin-top: -3px;
 }
-.page-main .product {
+.product {
   display: flex;
   align-items: center;
 }
-.page-main .product .main {
+.product .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.page-main .product .frontpager {
+.product .frontpager {
   text-align: left;
   position: relative;
   padding: 12px 0;
 }
-.page-main .product .frontpager p {
+.product .frontpager p {
   font-size: 90px;
   font-weight: 600;
   color: #f5f5f5;
@@ -607,7 +611,7 @@ body {
   opacity: 0.7;
   padding-top: 13px;
 }
-.page-main .product .frontpager .highlights {
+.product .frontpager .highlights {
   color: #000;
   font-size: 42px;
   font-weight: 600;
@@ -616,21 +620,21 @@ body {
   top: 64px;
   left: 0;
 }
-.page-main .product .icon .fa-angle-right {
+.product .icon .fa-angle-right {
   font-size: 51px;
   padding-top: 24px;
 }
-.page-main .product .icon .fa-angle-left {
+.product .icon .fa-angle-left {
   font-size: 51px;
   padding-right: 10px;
 }
-.page-main .product .icon .fa-angle-right::before {
+.product .icon .fa-angle-right::before {
   color: #1caecd;
 }
-.page-main .product del {
+.product del {
   color: #696969;
 }
-.page-main .product-list {
+.product-list {
   width: 25%;
   padding: 0 15px;
   box-sizing: border-box;
@@ -638,12 +642,13 @@ body {
   flex-wrap: wrap;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
 }
-.page-main .product-item {
+.product-item {
   overflow: hidden;
   width: 100%;
 }
-.page-main .product-item img {
+.product-item img {
   align-items: center;
   padding-bottom: 16px;
   width: 100%;
@@ -654,24 +659,24 @@ body {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-.page-main .product-item:hover img {
+.product-item:hover img {
   transform: scale(1.05);
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
 }
-.page-main .product-content {
+.product-content {
   height: 95px;
   text-align: center;
 }
-.page-main .product-content .title {
+.product-content .title {
   color: #000;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.01em;
 }
-.page-main .product-content .price {
+.product-content .price {
   color: #0ca8c9;
   font-weight: 600;
   font-size: 14px;
@@ -679,7 +684,8 @@ body {
 }
 .page-news {
   background-color: #f9f9f9;
-  padding-bottom: 90px;
+  height: 663px;
+  padding-bottom: 89px;
 }
 .page-news .last-news .frontpager {
   text-align: center;
@@ -718,6 +724,7 @@ body {
   flex-wrap: wrap;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 .page-news .last-news-item {
   overflow: hidden;
@@ -943,6 +950,9 @@ body {
   font-style: normal;
 }
 @media screen and (max-width: 1170px) {
+  .slider-content {
+    left: 60%;
+  }
   .slider-content-inner .slide-title {
     font-size: 51px;
   }
@@ -958,8 +968,8 @@ body {
   .page-news {
     width: 100%;
   }
-  .last-news .frontpager .highlights {
-    right: 379px;
+  .page-news .last-news .frontpager .highlights {
+    right: 35%;
   }
   .product-item {
     overflow: hidden;
@@ -1111,10 +1121,11 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .last-news .frontpager .highlights {
-    right: 254px;
+  .page-news .last-news .frontpager .highlights {
+    right: 30%;
+    top: 53%;
   }
-  .last-news-content .author {
+  .page-news .last-news-content .author {
     top: 80px;
   }
   .account-buttom-inner .signup form {
@@ -1151,7 +1162,7 @@ body {
     width: 75vh;
   }
   .slider-content-inner .slide-title {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 40px;
     padding: 0 28px;
   }
@@ -1218,13 +1229,18 @@ body {
     font-weight: 400;
     color: #8f8f8f;
   }
-  .last-news .frontpager .highlights {
-    right: 156px;
+  .page-news .last-news .frontpager p {
+    font-size: 70px;
   }
-  .last-news-content .author {
+  .page-news .last-news .frontpager .highlights {
+    font-size: 34px;
+    right: 28%;
+    top: 55%;
+  }
+  .page-news .last-news-content .author {
     top: 60px;
   }
-  .last-news-content .title {
+  .page-news .last-news-content .title {
     font-size: 12px;
   }
   .account-buttom-inner .signup form {
@@ -1271,28 +1287,29 @@ body {
     display: none;
   }
   .header-bottom-inner .bottom-form-control .search form .form-search-input input {
-    font-size: 10px;
+    font-size: 9px;
+    margin-right: 7px;
+    border-left: none;
   }
   .menu-bar-inner nav .navbar {
     width: 70vw;
   }
   .slider-content {
-    top: 10%;
+    top: 19%;
+    left: 55%;
   }
   .slider-content-inner {
     position: absolute;
-    right: 90px;
-    top: 39px;
   }
   .slider-content-inner .slide-title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 25px;
     padding-left: 45px;
   }
   .slider-content-inner .slide-describe {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-size: 8px;
+    font-size: 9px;
     margin-left: 20px;
     color: #8f8f8f;
   }
@@ -1364,67 +1381,99 @@ body {
     font-size: 40px;
   }
   .product .frontpager .highlights {
-    font-size: 18px;
-    top: 64px;
+    font-size: 25px;
+    top: 39%;
   }
-  .product .icon {
-    font-size: 20px;
+  .product .icon .fa-angle-left {
+    font-size: 35px;
+  }
+  .product .icon .fa-angle-right {
+    font-size: 35px;
   }
   .product-list {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
   }
-  .last-news .frontpager p {
+  .page-news .last-news .frontpager p {
     font-size: 45px;
     margin-top: -75px;
   }
-  .last-news .frontpager .highlights {
-    font-size: 26px;
-    right: 90px;
-    top: 37px;
+  .page-news .last-news .frontpager .highlights {
+    font-size: 23px;
+    right: 189px;
+    top: 24%;
   }
-  .last-news-content {
+  .page-news .last-news-content {
     margin: 15px 0;
   }
-  .last-news-content .author {
-    top: 17px;
+  .page-news .last-news-content .author {
+    top: 64%;
     padding-left: 5px;
   }
-  .last-news-content .title {
+  .page-news .last-news-content .title {
     font-size: 12px;
     padding-left: 5px;
   }
-  .last-news-list {
+  .page-news .last-news-list {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
   }
   .account-buttom {
-    margin-top: 462px;
+    margin-top: 708px;
     height: 360px;
   }
   .account-buttom-inner .info .title {
     font-size: 17px;
   }
   .account-buttom-inner .info .detail {
-    font-size: 5px;
+    font-size: 9px;
   }
   .account-buttom-inner .signup form {
-    width: 320px;
+    width: 292px;
     border-radius: 40px;
   }
   .account-buttom-inner .signup form .form-signup-input input {
-    height: 40px;
+    height: 35px;
     font-size: 3pt;
   }
   .account-buttom-inner .signup form .form-signup-button button {
-    left: 233px;
+    left: 71%;
     height: 30px;
     width: 80px;
     line-height: 30px;
     border-radius: 30px;
     font-size: 10px;
+  }
+  .footer__info .page-main .info-buttom {
+    height: 100%;
+  }
+  .footer__info .page-main .info-buttom .special {
+    padding-left: 67px;
+  }
+  .footer__info .page-main .info-buttom .info-inner {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .footer__info .page-main .info-buttom .info-inner .describes {
+    width: 100px;
+  }
+  .footer__info .page-main .info-buttom .info-inner .describes .summary {
+    font-size: 9px;
+  }
+  .footer__info .page-main .info-buttom .info-inner .describe {
+    width: 100px;
+  }
+  .footer__info .page-main .info-buttom .info-inner .describe .summary {
+    font-size: 9px;
+  }
+  .footer__info .page-main .info-buttom .info-inner .describe .icon {
+    padding-right: 5px;
+  }
+  .footer__info .page-main .info-buttom .info-inner .title {
+    font-size: 17px;
   }
   .footer__copyright span {
     font-size: 9px;
@@ -1447,18 +1496,78 @@ body {
   }
   .header-bottom-inner .bottom-form-control .search form .form-search-input input {
     font-size: 10px;
+    margin-left: -10px;
+    border-left: none;
+  }
+  .slider-content {
+    top: 18%;
+    left: 63%;
   }
   .slider-content-inner {
     right: 90px;
   }
   .slider-content-inner .slide-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .slider-content-inner .slide-describe {
-    font-size: 12px;
+    font-size: 14px;
+    margin-right: -3px;
+    margin-top: -3px;
   }
   .slider-content-inner .slide-btn {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider-content {
+    top: 20%;
+    left: 62%;
+  }
+  .slider-content-inner {
+    right: 90px;
+  }
+  .slider-content-inner .slide-title {
+    font-size: 20px;
+  }
+  .slider-content-inner .slide-describe {
+    font-size: 14px;
+    margin-top: -2px;
+    margin-bottom: -4px;
+    margin-left: 19px;
+  }
+  .slider-content-inner .slide-btn {
+    font-size: 10px;
+  }
+  .account-buttom {
+    margin-top: 462px;
+    height: 360px;
+  }
+  .account-buttom-inner .info .title {
+    font-size: 16px;
+  }
+  .account-buttom-inner .info .detail {
+    font-size: 9px;
+  }
+  .account-buttom-inner .signup form {
+    width: 270px;
+    border-radius: 45px;
+  }
+  .account-buttom-inner .signup form .form-signup-input input {
+    height: 35px;
+    font-size: 3pt;
+  }
+  .account-buttom-inner .signup form .form-signup-button button {
+    left: 74%;
+    height: 30px;
+    width: 65px;
+    line-height: 30px;
+    border-radius: 30px;
+    font-size: 10px;
+  }
+  .header-bottom-inner .bottom-form-control .search form .form-search-input input {
+    font-size: 10px;
+    margin-left: 7px;
+    border-left: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
