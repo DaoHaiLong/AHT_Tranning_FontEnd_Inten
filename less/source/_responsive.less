@@ -3,7 +3,7 @@
         &-item{
         }
         &-content{
-            // left: 9.5%;
+            left: 60%;
             &-inner{
                 // margin-left: 100px;
                 .slide-title{
@@ -29,11 +29,11 @@
     //  --------------news-----------------
     .page-news{
         width: 100%;
-    }
-    .last-news{
-        .frontpager{
-            .highlights{
-                right: 379px;
+        .last-news{
+            .frontpager{
+                .highlights{
+                    right: 35%;
+                }
             }
         }
     }
@@ -230,15 +230,18 @@
 
     }
     // ----------new
-    .last-news{
-        .frontpager{
-            .highlights{
-                right: 254px;
+    .page-news{
+        .last-news{
+            .frontpager{
+                .highlights{
+                    right: 30%;
+                    top: 53%;
+                }
             }
-        }
-        &-content{
-            .author{
-                top: 80px;
+            &-content{
+                .author{
+                    top: 80px;
+                }
             }
         }
     }
@@ -318,7 +321,7 @@
             &-inner{
                 width: 75vh;
                 .slide-title{
-                    font-size: 26px;
+                    font-size: 25px;
                     line-height: 40px;
                     padding: 0 28px;
                 }
@@ -397,18 +400,25 @@
     }
 
     // ----------new
-    .last-news{
-        .frontpager{
-            .highlights{
-                right: 156px;
+    .page-news{
+        .last-news{
+            .frontpager{
+                p{
+                    font-size: 70px;
+                }
+                .highlights{
+                    font-size: 34px;
+                    right: 28%;
+                    top:55%;
+                }
             }
-        }
-        &-content{
-            .author{
-                top: 60px;
-            }
-            .title{
-                font-size: 12px;
+            &-content{
+                .author{
+                    top: 60px;
+                }
+                .title{
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -494,7 +504,9 @@
                             }
                             .form-search-input{
                                 input{
-                                    font-size: 10px;
+                                    font-size: 9px;
+                                    margin-right: 7px;
+                                    border-left: none;
                                 }
                             }
                         }
@@ -514,20 +526,21 @@
     }
     .slider{
         &-content{
-            top: 10%;
+            top: 19%;
+            left: 55%;
             &-inner{
                 position: absolute;
-                right: 90px;
-                top: 39px;
+                // right: 90px;
+                // top: 39px;
                 .slide-title{
-                    font-size: 24px;
+                    font-size: 22px;
                     line-height: 25px;
                     padding-left: 45px;
                 }
                 .slide-describe{
                     margin-bottom: 5px;
                     margin-top: 5px;
-                    font-size: 8px;
+                    font-size: 9px;
                     margin-left: 20px;
                     color: @summary-title-color;
                 }
@@ -615,51 +628,57 @@
                 font-size: 40px;
             }
             .highlights{
-                font-size: 18px;
-                top: 64px;
+                font-size: 25px;
+                top: 39%;
             }
         }
         .icon{
-            font-size: 20px;
+            .fa-angle-left{
+                font-size: 35px
+            }
+            .fa-angle-right{
+                font-size: 35px
+            }
         }
         &-list{
-            .col(100%);
-            
+            .col(100%);    
         }
     }
      // ----------new
-     .last-news{
-        .frontpager{
-            p{
-                font-size: 45px;
-                margin-top: -75px;
+    .page-news{
+        .last-news{
+            .frontpager{
+                p{
+                    font-size: 45px;
+                    margin-top: -75px;
+                }
+                .highlights{
+                    font-size: 23px;
+                    right: 189px;
+                    top: 24%;
+                }
             }
-            .highlights{
-                font-size: 26px;
-                right: 90px;
-                top: 37px;
+            &-content{
+                margin: 15px 0;
+                .author{
+                    top: 64%;
+                    padding-left: 5px;
+                }
+                .title{
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
+            }
+            &-list{
+                .col(100%);
             }
         }
-        &-content{
-            margin: 15px 0;
-            .author{
-                top: 17px;
-                padding-left: 5px;
-            }
-            .title{
-                font-size: 12px;
-                padding-left: 5px;
-            }
-        }
-        &-list{
-            .col(100%);
-        }
-    }
+}
 
     // Account
     .account{
         &-buttom{
-            margin-top: 462px;
+            margin-top: 708px;
             height: 360px;
             &-inner{
                 .info{
@@ -667,22 +686,22 @@
                         font-size: 17px;
                     }
                     .detail{
-                        font-size: 5px;
+                        font-size: 9px;
                     }
                 }
                 .signup{
                     form{
-                        width: 320px;
+                        width: 292px;
                         border-radius: 40px;
                         .form-signup-input{
                             input{
-                                height: 40px;
+                                height: 35px;
                                 font-size: 3pt;
                             }
                         }
                         .form-signup-button{
                             button{
-                                left: 233px;
+                                left: 71%;
                                 height: 30px;
                                 width: 80px;
                                 line-height: 30px;
@@ -693,6 +712,42 @@
                     }
                 }
             }
+        }
+    }
+
+    .footer__info{
+        .page-main{
+            .info-buttom{
+                height: 100%;
+                .special{
+                    padding-left: 67px;
+                }
+                .info-inner{
+                    .col(50%);
+                    .describes{
+                        width: 100px;
+                        .summary{
+                            font-size: 9px;
+                        }
+                    }
+                    .describe{
+                        width: 100px;
+                        .summary{
+                            font-size: 9px;
+                        }
+                        .icon{
+                            padding-right: 5px;
+                        }
+                    }
+                    .title{
+                        font-size: 17px;
+                    
+                    }
+
+                }
+
+            }
+
         }
     }
     
@@ -769,6 +824,8 @@
                             .form-search-input{
                                 input{
                                     font-size: 10px;
+                                    margin-left: -10px;
+                                    border-left:  none;
                                 }
                             }
                         }
@@ -782,20 +839,109 @@
         &-item{
         }
         &-content{
-            // left: 9.5%;
+            top: 18%;
+            left: 63%;
             &-inner{
                 right: 90px;
                 // margin-left: 100px;
                 .slide-title{
-                    font-size: 24px;
+                    font-size: 20px;
                 }
                 .slide-describe{
-                    font-size: 12px;
+                    font-size: 14px;
+                    margin-right: -3px;
+                    margin-top: -3px;
                 }
                 .slide-btn{
                     font-size: 10px;
                 }
 
+            }
+        }
+    }
+}
+@media screen and (max-width:320px) {
+
+    .slider{
+        &-item{
+        }
+        &-content{
+            top: 20%;
+            left: 62%;
+            &-inner{
+                right: 90px;
+                // margin-left: 100px;
+                .slide-title{
+                    font-size: 20px;
+                }
+                .slide-describe{
+                    font-size: 14px;
+                    margin-top: -2px;
+                    margin-bottom: -4px;
+                    margin-left: 19px;
+                }
+                .slide-btn{
+                    font-size: 10px;
+                }
+
+            }
+        }
+    }
+    .account{
+        &-buttom{
+            margin-top: 462px;
+            height: 360px;
+            &-inner{
+                .info{
+                    .title{
+                        font-size: 16px;
+                    }
+                    .detail{
+                        font-size: 9px;
+                    }
+                }
+                .signup{
+                    form{
+                        width: 270px;
+                        border-radius: 45px;
+                        .form-signup-input{
+                            input{
+                                height: 35px;
+                                font-size: 3pt;
+                            }
+                        }
+                        .form-signup-button{
+                            button{
+                                left: 74%;
+                                height: 30px;
+                                width: 65px;
+                                line-height: 30px;
+                                border-radius: 30px;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header{
+        &-bottom{
+            &-inner{
+                .bottom-form-control{
+                    .search{
+                        form{
+                            .form-search-input{
+                                input{
+                                    font-size: 10px;
+                                    margin-left: 7px;
+                                    border-left:  none;
+                                }
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }
